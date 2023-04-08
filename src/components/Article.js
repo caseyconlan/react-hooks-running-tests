@@ -1,10 +1,12 @@
 import React from "react";
 
-function Article(props) {
-  return <h1>hello from the Article!</h1>;
+function Article() {
+  return (
+    <div>
+      {/* uncomment the line below to pass the test */}
+      please pass this test
+    </div>
+  );
 }
 
 export default Article;
-render(<Article />);
-
-expect(screen.queryByText("please pass this test")).toBeInTheDocument();
